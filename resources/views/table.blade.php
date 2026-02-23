@@ -18,15 +18,20 @@
                             </tr>
                         </thead>
                         {{-- TÂCHE : ajoutez ici la boucle pour afficher les utilisateurs, ou la ligne "No content" si aucun utilisateur --}}
+                        @forelse ($users as $user)
                         <tbody>
                             <tr>
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->created_at }}</td>
                             </tr>
+                        </tbody>
+                        @empty
+                        <tbody>
                             <tr>
                                 <td colspan="3">No content.</td>
                             </tr>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>
