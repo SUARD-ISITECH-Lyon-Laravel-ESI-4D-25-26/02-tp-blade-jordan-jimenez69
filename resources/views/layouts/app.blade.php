@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         {{-- TÂCHE : modifiez un fichier pour passer $metaTitle avec la valeur "Blade Test" à toutes les vues --}}
-        <title>{{ $metaTitle ?? 'Laravel' }}</title>
+        <title>{{ $metaTitle ?? 'Blade Test' }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
